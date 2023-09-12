@@ -24,7 +24,7 @@ Navegue até o diretório que contém o Dockerfile no terminal. Execute como adm
 
 ```
 (env)$ docker build -t front-store .
-```
+``` 
 
 Uma vez criada a imagem, para executar o container basta executar, como administrador, seguinte o comando:
 
