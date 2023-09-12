@@ -22,9 +22,9 @@ Certifique-se de ter o Docker instalado e em execução em sua máquina.
 
 Navegue até o diretório que contém o Dockerfile no terminal. Execute como administrador o seguinte comando para construir a imagem Docker:
 
-(env) $ docker build -t front-store .
+(env)$ docker build -t front-store .
 
 Uma vez criada a imagem, para executar o container basta executar, como administrador, seguinte o comando:
 
-(env) $ docker run --rm -p 8080:80 front-store
+(env)$ docker run --rm -p 8080:80 front-store
 Uma vez executando, para acessar o front-end, basta abrir o http://localhost:8080/#/ no navegador.
