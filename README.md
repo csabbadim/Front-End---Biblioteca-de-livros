@@ -1,4 +1,4 @@
-# Front - Biblioteca virtual de livros
+# Front-End - Biblioteca virtual de livros
 
 Este MVP foi realizado para a sprint **Arquitetura de software**, da pós-Graduação em Engenharia de Software pela PUC-Rio.
 
