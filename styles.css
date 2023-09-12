@@ -1,0 +1,226 @@
+body,
+ul,
+li {
+    font-family: tahoma;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(247, 235, 219);
+}
+
+header {
+    background-color: rgb(250, 235, 215);
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+.title {
+    color: white;
+    width: 100%;
+    background-color: rgb(230, 193, 143);
+    display: inline-block;
+    padding: 2px 0px;
+    position: sticky;
+    top: 0px;
+}
+
+.banner {
+    height: 300px;
+    overflow: hidden;
+}
+
+.banner img {
+    margin: 0px 0px 0px 0px;
+    width: 100%;
+}
+
+.newItem {
+    background-color: rgb(247, 235, 219);
+    padding: 30px 40px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.newItem:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#newBook {
+    margin: 0;
+    border: 1px solid rgb(255, 255, 255);
+    width: 25%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#newAutor {
+    margin: 0;
+    border: 1px solid rgb(222, 184, 135);
+    width: 8%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#newJaLido {
+    margin: 0;
+    border: 1px solid rgb(222, 184, 135);
+    width: 5%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#newQuerLer {
+    margin: 0;
+    border: 1px solid rgb(222, 184, 135);
+    width: 5%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+
+.addBtn {
+    padding: 9px 10px;
+    background-color: rgb(230, 193, 143);
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 2px;
+}
+
+.addBtn:hover {
+    background-color: #ffffff;
+    color: palegoldenrod;
+}
+
+.items {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.close:hover {
+    color: #fdfdfdf3;
+    font-weight: bolder;
+}
+
+table,
+th,
+td {
+    border: 1px solid brown;
+    border-collapse: collapse;
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 10px;
+    font-size: 18px;
+    transition: 0.2s;
+    text-align: start;
+}
+
+table{
+    background-color: rgb(245, 222, 179);
+    width: 50%;
+}
+
+tr:nth-child(odd){
+    background-color: #f5deb3;
+}
+
+th:nth-child(1){
+    width: 80%;
+}
+
+tr:hover {
+    background: rgb(255, 255, 255);
+}
+
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#nome_autor {
+    padding: 8px 30px 8px 8px; /* Adicione um espaço à direita para acomodar o ícone */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 300px; /* Ajuste a largura conforme necessário */
+}
+
+#nome_livro {
+    padding: 8px 30px 8px 8px; /* Adicione um espaço à direita para acomodar o ícone */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 300px; /* Ajuste a largura conforme necessário */
+}
+
+#ja_lido {
+    padding: 8px 30px 8px 8px; /* Adicione um espaço à direita para acomodar o ícone */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 300px; /* Ajuste a largura conforme necessário */
+}
+
+#quer_ler {
+    padding: 8px 30px 8px 8px; /* Adicione um espaço à direita para acomodar o ícone */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 300px; /* Ajuste a largura conforme necessário */
+}
+
+#previsao_leitura {
+    padding: 8px 30px 8px 8px; /* Adicione um espaço à direita para acomodar o ícone */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 300px; /* Ajuste a largura conforme necessário */
+}
+
+.search-icon {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    color: black; /* Cor do ícone */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.toggle-list {
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 10px;
+  }
+  
+  .toggle-list i {
+    transition: transform 0.3s;
+  }
+  
+  .toggle-list.active i {
+    transform: rotate(180deg);
+  }
+  
+  /* Estilo para a seta para baixo */
+.toggle-list-button {
+    cursor: pointer;
+    margin-left: 10px; /* Espaçamento entre o campo e a seta */
+  }
+  
+  /* Estilo para a lista de livros */
+  .list-container {
+    border: 1px solid #ccc;
+    padding: 10px;
+    max-height: 200px; /* Altura máxima da lista */
+    overflow-y: auto; /* Rolagem vertical quando necessário */
+    position: absolute;
+    right: 81%;
+    bottom:50%;
+    width: 15%; /* Largura igual ao elemento pai */
+    background-color: #f5deb3;
+    z-index: 1; /* Garante que a lista esteja acima dos outros elementos */
+  }
+  

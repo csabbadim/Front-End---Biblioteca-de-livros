@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Projeto</title>
+</head>
+
+<body>
+     <!-- Cabeçalho de informações do sistema -->
+    <header>
+        <div class="title">
+            <h1><img src = "img/livros.png" width="30px" height="30px">Biblioteca de Livros</h1>
+        </div>
+        
+    </header>
+
+     <!-- Opções para adicionar um novo item -->
+     <section class="newItem">
+        <input type="text" id="nome_livro" placeholder="Adicionar novo livro:">
+            <div class="toggle-list" id="toggleListButton" onclick="toggleList()">
+            <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="list-container" id="listContainer" style="display: none;">
+            </div>
+         <!-- Aqui serão adicionados os itens da lista de livros -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <div class="search-container">
+          <input type="text" id="nome_autor" placeholder="Nome do autor">
+          <span class="search-icon"><i class="fas fa-search"></i></span>
+        </div>        
+        <input type="text" id="quer_ler" placeholder="Você já leu esse livro?">
+        <input type="text" id="ja_lido" placeholder="Pretende ler ou reler esse livro?">
+        <input type="text" id="previsao_leitura" placeholder="Insira a data que leu o livro, ou quando pretende ler">
+        <span onclick="newItem()" class="addBtn">Adicionar</span>
+      </section>
+
+    <!-- Tabela com items existentes -->
+    <section class="items">
+        <table id="myTable">
+            <tr>
+                <th>Livro</th>
+                <th>Autor</th>
+                <th>Já lido</th>
+                <th>Quer ler?</th>
+                <th>Data de Leitura/Previsão de Leitura</th>
+                <th><img src="https://cdn-icons-png.flaticon.com/512/126/126468.png" width="15px" height="15px"></th>
+            </tr>
+            <tr>
+                <th colspan="6">
+                    <input type="text" id="searchInput" placeholder="Buscar livro...">
+                    <button id="searchButton">Buscar</button>
+                </th>
+            </tr>
+        </table>
+        
+    </section>
+    <script src="scripts.js"></script>
+    <script>
+        function toggleList() {
+            var listContainer = document.getElementById("listContainer");
+            listContainer.style.display = listContainer.style.display === "none" ? "block" : "none";
+        }
+    </script>
+</body>
+
+</html>
+
+
